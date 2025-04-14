@@ -37,3 +37,4 @@ yarn-error.*
 
 app-example
 lib/firebase.ts
+google-services.json
