@@ -1,43 +1,15 @@
 {
   "expo": {
-    "name": "DoneTogether",
-    "slug": "done-together",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.yourcompany.donetogether"
-    },
     "android": {
-      "package": "com.yourcompany.donetogether",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "package": "andrian.donetogether",
+      "googleServicesFile": "./google-services.json"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+      ["@react-native-firebase/app", {
+        "android": {
+          "googleServicesFile": "./google-services.json"
         }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+      }]
+    ]
   }
 }
